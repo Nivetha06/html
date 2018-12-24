@@ -1,0 +1,52 @@
+<html>
+<head>
+ <link rel="stylesheet"
+		type="text/css"
+		href="./samp.css">
+<center><h2> Arithmetic operations </h2></center>
+</head>
+<body>
+<div class="body">
+
+<div class="row">
+<div class="col"> value1</div>
+<div class="coll"> <input type="text" id="a"> </div>
+</div>
+<div class="row">
+<div class="col"> value2</div>
+<div class="coll"> <input type="text" id="b"> </div>
+</div>
+
+<button onclick="addition()"> add </button>
+<p><input type="text" id="ADD"></p>
+<button onclick="sub()"> sub </button>
+<p><input type="text" id="SUB"></p>
+<button onclick="mul()"> mul </button>
+<p><input type="text" id="MUL"><p>
+<button onclick="div()"> div </button>
+<p><input type="text" id="DIV"></p>
+</div>
+</body>
+<script>
+function addition(){
+var value1=Number(document.getElementById("a").value);
+var value2=Number(document.getElementById("b").value);
+document.getElementById("ADD").value=value1+value2;
+}
+function sub(){
+var value1=Number(document.getElementById("a").value);
+var value2=Number(document.getElementById("b").value);
+document.getElementById("SUB").value=value1-value2;
+}
+function mul(){
+var value1=Number(document.getElementById("a").value);
+var value2=Number(document.getElementById("b").value);
+document.getElementById("MUL").value=value1*value2;
+}
+function div(){
+var value1=Number(document.getElementById("a").value);
+var value2=Number(document.getElementById("b").value);
+document.getElementById("DIV").value=value1/value2;
+}
+</script>
+</html>

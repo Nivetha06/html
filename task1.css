@@ -1,0 +1,19 @@
+.body{
+	height:60%;
+	width:50%;
+	border:5px solid orange;
+	margin:20px;
+	padding:10px;
+}
+.row{
+	height:4%;
+	width:70%;
+}
+.col{
+	height:100%;
+	width:50%;
+}
+.coll{
+	height:100%;
+	width:50%;
+}

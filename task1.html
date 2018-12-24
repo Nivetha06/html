@@ -1,0 +1,42 @@
+<html>
+<head>
+ <link rel="stylesheet"
+		type="text/css"
+		href="./task1.css">
+<h2> Index  </h2>
+</head>
+<div class="body">
+<body>
+
+<button onclick="oppp()"> output </button>
+<p id="opp">
+</body>
+</div> 
+
+<script>
+var arr1=[0,4,6,5,1];
+var arr2=[3,1,2,4,3];
+var result=[];
+function oppp()
+{
+var len1,len2,i,j,l;
+var result=[];
+len1=arr1.length;
+len2=arr2.length;
+if(len1<len2)
+	l=len2;
+else
+	l=len1;
+for(x=0;x<len1;x++)
+{
+result[x]=arr1[x]+arr2[x];
+
+}
+
+
+
+document.getElementById("opp").innerHTML=result;
+
+}
+</script>
+</hmtl>

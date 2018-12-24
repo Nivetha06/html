@@ -1,0 +1,42 @@
+<html>
+<body>
+<p> Array1 values=2,5,6,7,4 </p>
+<p> Array2 values=3,1,4,2 </p>
+<p> Sum of each individual index values</p>
+<button onclick="result()"> result </button>
+<p id="res">
+</body>
+
+<script>
+function result(){
+
+var arr1=[2,5,6,7,4];
+var arr2=[3,1,4,2];
+var count=0;
+var result=[];
+var len1=arr1.length;
+var len2=arr2.length;
+while(count<len1&& len2)
+{
+result.push(arr1[count]+arr2[count])
+count++;
+}
+if(count==len1)
+{
+for(x=count;x<len2;x++)
+{
+result.push(arr2[x]);
+}
+}
+else
+{
+for(x=count;x<len1;x++)
+{
+result.push(arr1[x]);
+}
+}
+
+document.getElementById("res").innerHTML=result;
+}
+</script>
+</html>

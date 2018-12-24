@@ -1,0 +1,52 @@
+<html>
+<head>
+ <link rel="stylesheet"
+		type="text/css"
+		href="./samp.css">
+<center><h2> Comparison  </h2></center>
+</head>
+<body>
+<div class="body">
+<div class="row">
+<div class="col"> value a </div> <div class="coll"> <input type="text" id="a">
+</div>
+</div>
+<div class="row">
+<div class="col"> value b </div> <div class="coll"> <input type="text" id="b">
+</div>
+</div>
+
+
+<button onclick="lessthan()"> leassthan </button>
+result:<p id="l"> </p>
+<button onclick="greaterthan()"> greaterthan </button>
+result:<p id="gr"> </p>
+<button onclick="equal()"> equal</button>
+result:<p id="e"> </p>
+<button onclick="notequal()"> notequal</button>
+result:<p id="ne"> </p>
+</div>
+</body>
+<script>
+function lessthan(){
+var valuea=Number(document.getElementById("a").value);
+var valueb=Number(document.getElementById("b").value);
+document.getElementById("l").innerHTML=valuea<valueb;
+}
+function greaterthan(){
+var valuea=Number(document.getElementById("a").value);
+var valueb=Number(document.getElementById("b").value);
+document.getElementById("gr").innerHTML=valuea>valueb;
+}
+function equal(){
+var valuea=Number(document.getElementById("a").value);
+var valueb=Number(document.getElementById("b").value);
+document.getElementById("e").innerHTML=valuea==valueb;
+}
+function notequal(){
+var valuea=Number(document.getElementById("a").value);
+var valueb=Number(document.getElementById("b").value);
+document.getElementById("ne").innerHTML=valuea!=valueb;
+}
+</script>
+</html>

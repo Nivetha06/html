@@ -1,0 +1,22 @@
+body{
+	border:2px orange solid;
+	margin:0px;
+	padding:40px;
+}
+.frame{
+	width:30%;
+	height:40%;
+}
+.b{
+	background-color:pink;
+	padding:10px;
+	margin:20px 5px;
+	width:30%;
+}
+.i{
+	background-color:orange;
+	padding:10px;
+	margin:20px 5px;
+	width:30%;
+
+}

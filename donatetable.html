@@ -1,0 +1,57 @@
+<html>
+<head>
+
+	<link rel="stylesheet"
+		type="text/css"
+		href="./donatetable.css">
+<body>
+<h1 class="head">  Donation  </h1>
+</head>
+<div class="att">
+<table>
+      <tr> 
+            <td> *First name </td> 
+			<td><input type="text" id="hello" value="smpe"/></td>
+	  </tr>
+      <tr> 
+	         <td> *Last name  </td> 
+			 <td><input type="text"> </td> 
+	 </tr>
+      <tr> 
+	        <td> *Email  </td> 
+			<td> <input type="text"> </td> 
+	</tr>
+     <tr> 
+	 <td> phone</td> 
+	 <td> <input type="text"></td>
+	</tr>
+<tr> <td> *Amount($USD) </td> <td>  <input type="text" ></td> </tr>
+<tr> <td> fund </td> <td><select>
+<option value="earthquake">earthquake
+</option>
+<option value="flood">flood
+</option>
+<option value="tsunami">tsunami
+</option>
+<option value="earthquake">earthquake
+</option> </td>
+</select></tr>
+<tr> <td>comment</th> <td><textarea rows="4" cols="20">
+</textarea></td>
+</tr>
+
+</div>
+</table>
+<button onclick="myfunction()"> submit </button>
+
+<p id="name"> </p>
+
+</body>
+<script> 
+function myfunction(){
+console.log(document.getElementById("hello"), '=============')
+var firstname=document.getElementById("hello").value;
+document.getElementById("name").innerHTML=firstname;
+}
+</script>
+</html>

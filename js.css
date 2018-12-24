@@ -1,0 +1,17 @@
+body{
+	padding:5px;
+}
+
+
+.row{
+	float:left;
+width:45%;
+height:50%;
+background-color:pink;
+margin:5px;
+border:2px solid black;
+}
+.head{
+	text-align:center;
+	font-weight:bold;
+}

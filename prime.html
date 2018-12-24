@@ -1,0 +1,52 @@
+<html>
+<body>
+	Enter the input values <input type="number" id="value" >
+	<button onclick="add()"> Add values  </button>
+	<p id="ad"> </p>
+	<button onclick="check()"> check </button>
+	<p id="ch"> </p>
+	<button onclick="result()"> result </button>
+	<p id="res"> </p>
+</body>
+
+<script>
+var ad=[];
+var show=[];
+var x,i,j,k;
+var prime;
+var result1=[];
+function add(){
+ad.push(document.getElementById("value").value);
+document.getElementById("value").value="";
+//document.getElementById("add").innerHTML=ad;
+}
+function check()
+{
+	//for(x=0;x<ad.length;x++)
+	//{
+	document.getElementById("ch").innerHTML=ad;
+	//show[i] =ad[i];
+	//}
+	//document.getElementById("ch").innerHTML=show;
+}
+
+
+function result()
+{
+for(i=0;i<ad.length;i++)
+{
+prime=0;
+for(j=2;j<ad[i];j++)
+{
+	if(ad[i]%j==0)
+		prime=1;
+		break;
+}	
+	if(prime==0){
+		result1.push(ad[i]);
+	}
+	}
+document.getElementById("res").innerHTML=result1;
+}
+</script>
+</html>

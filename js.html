@@ -1,0 +1,72 @@
+<html>
+<head>
+	<link rel="stylesheet"
+		type="text/css"
+		href="./js.css">
+</head>
+
+<body>
+<p id="sam3"> </p>
+
+<script>
+
+
+var item,ilen,text,i;
+var item=[
+
+		{ 
+        "productname":"MEN'S BETTER THAN NAKED&trade; JACKET",
+        "productimageurl":"http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/mens-better-than-naked-jacket-AVMH_LC9_hero.png",
+        "headertoprighttext":"Shop All",
+        "headertoplefttext":"Men's",
+        "producturl":"http://www.thenorthface.com/catalog/sc-gear/men-39-s-better-than-naked-8482-jacket.html",
+        "headertoprighturl":"http://www.thenorthface.com/en_US/shop-mens/",
+        "productctatext":"Shop Now"
+     },
+	 {
+        "productname":"WOMEN'S BETTER THAN NAKED&trade; JACKET",
+        "productimageurl":"http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/womens-better-than-naked-jacket-AVKL_NN4_hero.png",
+        "headertoprighttext":"Shop All",
+        "headertoplefttext":"Women's",
+        "producturl":"http://www.thenorthface.com/catalog/sc-gear/women-39-s-better-than-naked-8482-jacket.html",
+        "headertoprighturl":"http://www.thenorthface.com/en_US/shop-womens/",
+        "productctatext":"Shop Now"
+     },
+     {
+        "productname":"WOMEN'S SINGLE-TRACK SHOE",
+        "productimageurl":"http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/womens-single-track-shoe-ALQF_JM3_hero.png",
+        "headertoprighttext":"Shop All",
+        "headertoplefttext":"Running Shoes",
+        "producturl":"http://www.thenorthface.com/catalog/sc-gear/womens-single-track.html",
+        "headertoprighturl":"http://www.thenorthface.com/webapp/wcs/stores/servlet/TNFSearchResult?langId=-1&amp;storeId=207&amp;catalogId=10201&amp;searchTerm=running%20shoes",
+        "productctatext":"Shop Now"
+     },
+     {
+        "productname":"Enduro Boa&reg; Hydration Pack",
+        "productimageurl":"http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/enduro-boa-hydration-pack-AJQZ_JK3_hero.png",
+        "headertoprighttext":"Shop All",
+        "headertoplefttext":"Equipment",
+        "producturl":"http://www.thenorthface.com/catalog/sc-gear/enduro-boa.html",
+        "headertoprighturl":"http://www.thenorthface.com/en_US/shop-equipment/",
+        "productctatext":"Shop Now"
+     }
+     ];
+	 
+	 ilen=item.length;
+	 for(i=0;i<ilen;i++)
+	 {
+	 text+="<div class='row'>" +  "<a href='http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/mens-better-than-naked-jacket-AVMH_LC9_hero.png'>"+"<p> link </p>"+ "</a>" +item[i].productname + 
+													item[i].productimageurl + 
+													item[i].headertoprighttext + 
+													item[i].headertoplefttext + 
+													item[i].producturl  + 
+													item[i].headertoprighturl + 
+													item[i].productctatext +"</div>";
+	 }
+	 
+document.getElementById("sam3").innerHTML = text;
+       
+</script>
+
+</body>
+</html>

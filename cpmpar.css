@@ -1,0 +1,22 @@
+.body{
+	border:2px solid black;
+	margin:20px 360px;
+	height:65%;
+	width:40%;
+	padding:20px;
+	text-align:center;
+}
+.row{
+	width:70%;
+	height:20%;
+}
+.col{
+	width:50%;
+	height:100%;
+	float:left;
+}
+.coll{
+	width:50%;
+	height:100%;
+	float:left;
+}

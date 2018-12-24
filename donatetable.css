@@ -1,0 +1,17 @@
+body{
+	border:2px orange solid;
+	margin:100px 450px;
+}
+.head{
+	border:1px;
+	border-bottom:solid;
+	border-color:black;
+	text-align:left;
+}
+.att{
+	text-align:center;
+	padding:10px;
+}
+
+
+

@@ -1,0 +1,32 @@
+.heads{
+	width:100%;
+	height:5%;
+	border-bottom: 1px solid black;
+}
+.body{
+	width:40%;
+	height:80%;
+	border:5px solid red;
+	margin:20px 440px;
+}
+.row{
+	width:100%;
+	height:8%;
+	padding-top:10px;
+	
+}
+.col{
+	width:50%;
+	height:100%;
+	float:left;
+	text-align:center;
+
+}
+.coll{
+	width:50%;
+	height:100%;
+	float:left;
+}
+.ttt{
+	color: red;
+}
